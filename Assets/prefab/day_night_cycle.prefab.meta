@@ -1,0 +1,21 @@
+{
+  "publish": {
+    "Enabled": true,
+    "ProjectConfig": {
+      "Title": "Day Night Cycle",
+      "Type": "prefab",
+      "Org": "sousoup",
+      "Ident": "daynightcycle",
+      "Schema": 0,
+      "IncludeSourceFiles": false,
+      "Resources": null,
+      "PackageReferences": null,
+      "EditorReferences": null,
+      "Mounts": null,
+      "IsStandaloneOnly": false,
+      "Metadata": {
+        "SingleAssetSource": "prefab/day_night_cycle.prefab"
+      }
+    }
+  }
+}

@@ -1,0 +1,1264 @@
+{
+  "RootObject": {
+    "__guid": "2f0c5e5d-2852-453b-8cda-f6bb92e65678",
+    "__version": 2,
+    "Flags": 0,
+    "Name": "player",
+    "Position": "0,0,0",
+    "Rotation": "0,0,0,1",
+    "Scale": "1,1,1",
+    "Tags": "noblockaudio",
+    "Enabled": true,
+    "NetworkMode": 2,
+    "NetworkFlags": 0,
+    "NetworkOrphaned": 0,
+    "NetworkTransmit": true,
+    "OwnerTransfer": 1,
+    "Components": [
+      {
+        "__type": "Sandbox.SkinnedModelRenderer",
+        "__guid": "1c4f939a-38aa-4312-bd78-f2b09adba55d",
+        "__enabled": true,
+        "Flags": 0,
+        "AnimationGraph": null,
+        "BodyGroups": 341,
+        "BoneMergeTarget": null,
+        "CreateAttachments": false,
+        "CreateBoneObjects": false,
+        "LodOverride": null,
+        "MaterialGroup": null,
+        "MaterialOverride": null,
+        "Materials": null,
+        "Model": "models/citizen/citizen.vmdl",
+        "Morphs": {},
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null,
+        "Parameters": {
+          "bools": {},
+          "ints": {},
+          "floats": {},
+          "vectors": {},
+          "rotations": {}
+        },
+        "PlaybackRate": 1,
+        "RenderOptions": {
+          "GameLayer": true,
+          "OverlayLayer": false,
+          "BloomLayer": false,
+          "AfterUILayer": false
+        },
+        "RenderType": "On",
+        "Sequence": {
+          "Name": null,
+          "Looping": true,
+          "Blending": false
+        },
+        "Tint": "1,1,1,1",
+        "UseAnimGraph": true
+      },
+      {
+        "__type": "Sandbox.CharacterController",
+        "__guid": "39ce14b1-1ab6-4e1b-8b09-c74bd89c4184",
+        "__enabled": true,
+        "Flags": 0,
+        "Acceleration": 10,
+        "Bounciness": 0.3,
+        "GroundAngle": 45,
+        "Height": 64,
+        "IgnoreLayers": "nocollide",
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null,
+        "Radius": 16,
+        "StepHeight": 18,
+        "UseCollisionRules": false
+      },
+      {
+        "__type": "Sandbox.Citizen.CitizenAnimationHelper",
+        "__guid": "5188302b-98ca-4e87-b8c6-54ec5cc7fdd1",
+        "__enabled": true,
+        "Flags": 0,
+        "BodyWeight": 1,
+        "EyeSource": {
+          "_type": "gameobject",
+          "go": "2f0c5e5d-2852-453b-8cda-f6bb92e65678"
+        },
+        "EyesWeight": 1,
+        "HeadWeight": 1,
+        "Height": null,
+        "IkLeftFoot": null,
+        "IkLeftHand": null,
+        "IkRightFoot": null,
+        "IkRightHand": null,
+        "LookAt": null,
+        "LookAtEnabled": false,
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null,
+        "Target": {
+          "_type": "component",
+          "component_id": "1c4f939a-38aa-4312-bd78-f2b09adba55d",
+          "go": "2f0c5e5d-2852-453b-8cda-f6bb92e65678",
+          "component_type": "SkinnedModelRenderer"
+        }
+      },
+      {
+        "__type": "Sandbox.Voice",
+        "__guid": "ec6c78ca-d23a-4cc2-987f-408d2efe9f23",
+        "__enabled": true,
+        "Flags": 0,
+        "Distance": 15000,
+        "Falloff": [
+          {
+            "x": 0,
+            "y": 1,
+            "in": 0,
+            "out": -1.8,
+            "mode": "Mirrored"
+          },
+          {
+            "x": 0.05,
+            "y": 0.22,
+            "in": 3.5,
+            "out": -3.5,
+            "mode": "Mirrored"
+          },
+          {
+            "x": 0.2,
+            "y": 0.04,
+            "in": 0.16,
+            "out": -0.16,
+            "mode": "Mirrored"
+          },
+          {
+            "x": 1,
+            "y": 0,
+            "in": 0,
+            "out": 0,
+            "mode": "Mirrored"
+          }
+        ],
+        "LipSync": true,
+        "Loopback": false,
+        "Mode": "PushToTalk",
+        "MorphScale": 3,
+        "MorphSmoothTime": 0.1,
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null,
+        "PushToTalkInput": "voice",
+        "Renderer": {
+          "_type": "component",
+          "component_id": "1c4f939a-38aa-4312-bd78-f2b09adba55d",
+          "go": "2f0c5e5d-2852-453b-8cda-f6bb92e65678",
+          "component_type": "SkinnedModelRenderer"
+        },
+        "VoiceMixer": {
+          "Name": "unknown",
+          "Id": "00000000-0000-0000-0000-000000000000"
+        },
+        "Volume": 2,
+        "WorldspacePlayback": true
+      },
+      {
+        "__type": "Sandbox.Entities.Interactable.Props.PropToolManager",
+        "__guid": "c88c69d7-76bc-4f09-8a4e-6b6c01da46ae",
+        "__enabled": true,
+        "Flags": 0,
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null,
+        "PropLimit": 25,
+        "PropPrefab": {
+          "_type": "gameobject",
+          "prefab": "prefab/prop.prefab"
+        },
+        "Screen": {
+          "_type": "gameobject",
+          "go": "ad6ed4b5-d799-468d-a0e1-546cb904eaa8"
+        },
+        "SpawnProtectionTimeWindow": 1,
+        "UseCloudProps": true
+      },
+      {
+        "__type": "Sandbox.GameSystems.Player.Player",
+        "__guid": "10039fed-00a3-4ce6-8416-281a841a2ee3",
+        "__enabled": true,
+        "Flags": 0,
+        "_salaryTimerSeconds": 60,
+        "_starvingTimerSeconds": 20,
+        "AnimationHelper": {
+          "_type": "component",
+          "component_id": "5188302b-98ca-4e87-b8c6-54ec5cc7fdd1",
+          "go": "2f0c5e5d-2852-453b-8cda-f6bb92e65678",
+          "component_type": "CitizenAnimationHelper"
+        },
+        "Balance": 500,
+        "CanOwnDoors": [],
+        "CharacterController": {
+          "_type": "component",
+          "component_id": "39ce14b1-1ab6-4e1b-8b09-c74bd89c4184",
+          "go": "2f0c5e5d-2852-453b-8cda-f6bb92e65678",
+          "component_type": "CharacterController"
+        },
+        "Collider": null,
+        "Dead": false,
+        "DefaultItems": [
+          "weapons/default/hands/hands.weapon",
+          "weapons/default/camera/camera.weapon"
+        ],
+        "Doors": [],
+        "DrawDebugInteract": false,
+        "EyesLocked": false,
+        "Health": 100,
+        "Hunger": 100,
+        "HungerMax": 100,
+        "InteractRange": 120,
+        "InteractTag": "Interact",
+        "InventoryVisibilityDelay": 3,
+        "LeaderBoard": {
+          "_type": "component",
+          "component_id": "a85a180c-7fbf-44df-a018-2d27256c984c",
+          "go": "ad6ed4b5-d799-468d-a0e1-546cb904eaa8",
+          "component_type": "LeaderBoard"
+        },
+        "MaxHealth": 100,
+        "NoClipSpeed": 500,
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null,
+        "PlayerHud": {
+          "_type": "component",
+          "component_id": "c37f901d-9dcc-4287-ac82-22e6b6bf1ceb",
+          "go": "ad6ed4b5-d799-468d-a0e1-546cb904eaa8",
+          "component_type": "PlayerHUD"
+        },
+        "PlayerTabMenu": {
+          "_type": "component",
+          "component_id": "c37f901d-9dcc-4287-ac82-22e6b6bf1ceb",
+          "go": "ad6ed4b5-d799-468d-a0e1-546cb904eaa8",
+          "component_type": "PlayerHUD"
+        },
+        "RunMoveSpeed": 175,
+        "SprintMoveSpeed": 300,
+        "Starving": false,
+        "WalkMoveSpeed": 175
+      },
+      {
+        "__type": "Sandbox.Weapons.Default.Hands",
+        "__guid": "91a6fe57-d4c1-4023-b32d-9c9599f246cb",
+        "__enabled": true,
+        "Flags": 0,
+        "GrabbableTag": "grab",
+        "HoldDistance": 55,
+        "InteractRange": 150,
+        "MaxReleaseVelocity": 500,
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null,
+        "Player": {
+          "_type": "component",
+          "component_id": "10039fed-00a3-4ce6-8416-281a841a2ee3",
+          "go": "2f0c5e5d-2852-453b-8cda-f6bb92e65678",
+          "component_type": "Player"
+        },
+        "RotateSpeed": 1,
+        "ThrowForce": 450
+      },
+      {
+        "__type": "PlayerFootsteps",
+        "__guid": "be61e14b-6a30-4769-8e6c-0fbe22ca663c",
+        "__enabled": true,
+        "Flags": 0,
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null,
+        "Source": {
+          "_type": "component",
+          "component_id": "1c4f939a-38aa-4312-bd78-f2b09adba55d",
+          "go": "2f0c5e5d-2852-453b-8cda-f6bb92e65678",
+          "component_type": "SkinnedModelRenderer"
+        }
+      }
+    ],
+    "Children": [
+      {
+        "__guid": "2e001bd4-644b-4c08-9c34-ebb6fba6c34e",
+        "__version": 2,
+        "Flags": 0,
+        "Name": "Collider",
+        "Position": "0,0,0",
+        "Rotation": "0,0,0,1",
+        "Scale": "1,1,1",
+        "Tags": "",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkFlags": 0,
+        "NetworkOrphaned": 0,
+        "NetworkTransmit": true,
+        "OwnerTransfer": 1,
+        "Components": [
+          {
+            "__type": "Sandbox.BoxCollider",
+            "__guid": "cfb0d94e-cd3d-487d-bba9-ae064622a37a",
+            "__enabled": true,
+            "Flags": 0,
+            "Center": "0,0,32",
+            "ColliderFlags": 0,
+            "Elasticity": null,
+            "Friction": null,
+            "IsTrigger": false,
+            "OnComponentDestroy": null,
+            "OnComponentDisabled": null,
+            "OnComponentEnabled": null,
+            "OnComponentFixedUpdate": null,
+            "OnComponentStart": null,
+            "OnComponentUpdate": null,
+            "OnObjectTriggerEnter": null,
+            "OnObjectTriggerExit": null,
+            "OnTriggerEnter": null,
+            "OnTriggerExit": null,
+            "RollingResistance": null,
+            "Scale": "32,32,64",
+            "Static": false,
+            "Surface": null,
+            "SurfaceVelocity": "0,0,0"
+          }
+        ],
+        "Children": []
+      },
+      {
+        "__guid": "ad6ed4b5-d799-468d-a0e1-546cb904eaa8",
+        "__version": 2,
+        "Flags": 0,
+        "Name": "Screen",
+        "Position": "0,0,0",
+        "Rotation": "0,0,0,1",
+        "Scale": "1,1,1",
+        "Tags": "",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkFlags": 0,
+        "NetworkOrphaned": 0,
+        "NetworkTransmit": true,
+        "OwnerTransfer": 1,
+        "Components": [
+          {
+            "__type": "Sandbox.ScreenPanel",
+            "__guid": "53b84b42-dc6a-49dc-aaeb-f9a86b9092c5",
+            "__enabled": true,
+            "Flags": 0,
+            "AutoScreenScale": true,
+            "OnComponentDestroy": null,
+            "OnComponentDisabled": null,
+            "OnComponentEnabled": null,
+            "OnComponentFixedUpdate": {
+              "__version": 9,
+              "__guid": "c56d28f3-33ce-4f1f-8c8b-c5904cd8255a",
+              "__changeId": 0,
+              "UserData": {
+                "Title": "On Component Fixed Update",
+                "ReferencedComponentTypes": [
+                  "BasicMenu"
+                ]
+              },
+              "Variables": [],
+              "Nodes": [
+                {
+                  "Id": 0,
+                  "Type": "input",
+                  "UserData": {
+                    "Position": "-144,0"
+                  }
+                },
+                {
+                  "Id": 1,
+                  "Type": "if",
+                  "UserData": {
+                    "Position": "272,0"
+                  }
+                },
+                {
+                  "Id": 2,
+                  "Type": "input.down",
+                  "UserData": {
+                    "Position": "-0,64"
+                  }
+                },
+                {
+                  "Id": 6,
+                  "Type": "property",
+                  "Properties": {
+                    "_name": "Enabled",
+                    "_type": "Sandbox.Component"
+                  },
+                  "UserData": {
+                    "Position": "704,-64"
+                  }
+                },
+                {
+                  "Id": 7,
+                  "Type": "property",
+                  "Properties": {
+                    "_name": "Enabled",
+                    "_type": "Sandbox.Component"
+                  },
+                  "UserData": {
+                    "Position": "720,128"
+                  }
+                },
+                {
+                  "Id": 8,
+                  "Type": "scene.get",
+                  "Properties": {
+                    "T": "Sandbox.UI.BasicMenu"
+                  },
+                  "UserData": {
+                    "Position": "496,32"
+                  }
+                }
+              ],
+              "Links": [
+                {
+                  "SrcId": 0,
+                  "SrcName": "_signal",
+                  "DstId": 1,
+                  "DstName": "_signal"
+                },
+                {
+                  "SrcId": 2,
+                  "SrcName": "_result",
+                  "DstId": 1,
+                  "DstName": "condition"
+                },
+                {
+                  "Id": 12,
+                  "Value": "Score",
+                  "DstId": 2,
+                  "DstName": "action"
+                },
+                {
+                  "SrcId": 1,
+                  "SrcName": "true",
+                  "DstId": 6,
+                  "DstName": "_signal"
+                },
+                {
+                  "SrcId": 8,
+                  "SrcName": "_result",
+                  "DstId": 6,
+                  "DstName": "_target"
+                },
+                {
+                  "Id": 13,
+                  "Value": true,
+                  "DstId": 6,
+                  "DstName": "_value"
+                },
+                {
+                  "SrcId": 1,
+                  "SrcName": "false",
+                  "DstId": 7,
+                  "DstName": "_signal"
+                },
+                {
+                  "SrcId": 8,
+                  "SrcName": "_result",
+                  "DstId": 7,
+                  "DstName": "_target"
+                },
+                {
+                  "Id": 14,
+                  "Value": false,
+                  "DstId": 7,
+                  "DstName": "_value"
+                },
+                {
+                  "SrcId": 0,
+                  "SrcName": "_target",
+                  "DstId": 8,
+                  "DstName": "_this"
+                }
+              ]
+            },
+            "OnComponentStart": {
+              "__version": 9,
+              "__guid": "66e36109-b932-4366-bccb-5ccfa0d61af1",
+              "__changeId": 0,
+              "UserData": {
+                "Title": "On Component Start",
+                "ReferencedComponentTypes": []
+              },
+              "Variables": [],
+              "Nodes": [
+                {
+                  "Id": 37,
+                  "Type": "property",
+                  "Properties": {
+                    "_name": "IsOwner",
+                    "_type": {
+                      "$type": "Nested",
+                      "DeclaringType": "Sandbox.GameObject",
+                      "Name": "NetworkAccessor"
+                    }
+                  },
+                  "UserData": {
+                    "Position": "-432,928"
+                  }
+                },
+                {
+                  "Id": 38,
+                  "Type": "input",
+                  "UserData": {
+                    "Position": "-464,848"
+                  }
+                },
+                {
+                  "Id": 39,
+                  "Type": "if",
+                  "UserData": {
+                    "Position": "-160,848"
+                  }
+                },
+                {
+                  "Id": 41,
+                  "Type": "input.value",
+                  "Properties": {
+                    "_name": "_target"
+                  },
+                  "UserData": {
+                    "Position": "-144,944"
+                  }
+                },
+                {
+                  "Id": 42,
+                  "Type": "property",
+                  "Properties": {
+                    "_name": "Network",
+                    "_type": "Sandbox.GameObject"
+                  },
+                  "UserData": {
+                    "Position": "-624,928"
+                  }
+                },
+                {
+                  "Id": 43,
+                  "Type": "call",
+                  "Properties": {
+                    "_isStatic": false,
+                    "_name": "Destroy",
+                    "_type": "Sandbox.GameObject"
+                  },
+                  "UserData": {
+                    "Position": "16,896"
+                  }
+                }
+              ],
+              "Links": [
+                {
+                  "SrcId": 42,
+                  "SrcName": "_result",
+                  "DstId": 37,
+                  "DstName": "_target"
+                },
+                {
+                  "SrcId": 38,
+                  "SrcName": "_signal",
+                  "DstId": 39,
+                  "DstName": "_signal"
+                },
+                {
+                  "SrcId": 37,
+                  "SrcName": "_result",
+                  "DstId": 39,
+                  "DstName": "condition"
+                },
+                {
+                  "SrcId": 38,
+                  "SrcName": "_target",
+                  "DstId": 42,
+                  "DstName": "_target"
+                },
+                {
+                  "SrcId": 39,
+                  "SrcName": "false",
+                  "DstId": 43,
+                  "DstName": "_signal"
+                },
+                {
+                  "SrcId": 38,
+                  "SrcName": "_target",
+                  "DstId": 43,
+                  "DstName": "_target"
+                }
+              ]
+            },
+            "OnComponentUpdate": null,
+            "Opacity": 1,
+            "Scale": 1,
+            "ScaleStrategy": "ConsistentHeight",
+            "TargetCamera": null,
+            "ZIndex": 100
+          },
+          {
+            "__type": "Sandbox.UI.PlayerHUD",
+            "__guid": "c37f901d-9dcc-4287-ac82-22e6b6bf1ceb",
+            "__enabled": false,
+            "Flags": 0,
+            "MyStringValue": "Press \"TAB\" to open the MENU",
+            "OnComponentDestroy": null,
+            "OnComponentDisabled": null,
+            "OnComponentEnabled": null,
+            "OnComponentFixedUpdate": null,
+            "OnComponentStart": null,
+            "OnComponentUpdate": null,
+            "PlayerPrefab": {
+              "_type": "gameobject",
+              "go": "2f0c5e5d-2852-453b-8cda-f6bb92e65678"
+            }
+          },
+          {
+            "__type": "Sandbox.UI.BasicMenu",
+            "__guid": "66371a07-fbb7-48a3-90fb-66f40db9152e",
+            "__enabled": false,
+            "Flags": 0,
+            "Controls": [
+              "Menu : TAB",
+              "Player list: Q (TODO : change it)",
+              "Voice chat: X",
+              "No-clip : V (admin permissions required)",
+              "Grab/Drop props: Left Mouse Button (LMB)",
+              "Freeze Props: Right Mouse Button (RMB) (TODO: Only the owner can unfreeze it) )",
+              "Rotate props: Middle Mouse Button (MMB)",
+              "Inventory slot: Mouse Wheel, [1-9], or Mouse Button 3/4",
+              "Door purchase: R",
+              "Door menu: Hold R"
+            ],
+            "InfoCredits": "We extend our thanks to all the contributors for their efforts: Sousou, QueenPM, Stefan, HankKitts, dancore, Bozy, IRLadderGoat, Mangrogred, Dada, Red (SebbeJohansson), goodmittens, EuroBlue, Dimmer, Grepid, and Fnasp.",
+            "InfoNotes": "Welcome to DarkRP, an open-source, non-serious and fun roleplay game. We're drawing inspiration from the well-known game mode available on Garry's Mod. This game is still work in progress so please expect some bugs and inconsistencies.\n\nIf you'd like to help out, you can join us on Discord or GitHub. Whether you're a developer, designer, or just a player, your involvement is highly valuable to us!",
+            "OnComponentDestroy": null,
+            "OnComponentDisabled": {
+              "__version": 9,
+              "__guid": "86ae15ed-598d-40f6-8392-45ff34f3d151",
+              "__changeId": 0,
+              "UserData": {
+                "Title": "On Component Disabled",
+                "ReferencedComponentTypes": []
+              },
+              "Variables": [],
+              "Nodes": [
+                {
+                  "Id": 0,
+                  "Type": "input"
+                },
+                {
+                  "Id": 1,
+                  "Type": "sound.play",
+                  "UserData": {
+                    "Position": "480,64"
+                  }
+                },
+                {
+                  "Id": 2,
+                  "Type": "property",
+                  "Properties": {
+                    "_name": "IsOwner",
+                    "_type": {
+                      "$type": "Nested",
+                      "DeclaringType": "Sandbox.GameObject",
+                      "Name": "NetworkAccessor"
+                    }
+                  },
+                  "UserData": {
+                    "Position": "-16,80"
+                  }
+                },
+                {
+                  "Id": 3,
+                  "Type": "if",
+                  "UserData": {
+                    "Position": "256,0"
+                  }
+                },
+                {
+                  "Id": 4,
+                  "Type": "property",
+                  "Properties": {
+                    "_name": "Network",
+                    "_type": "Sandbox.GameObject"
+                  },
+                  "UserData": {
+                    "Position": "-208,80"
+                  }
+                }
+              ],
+              "Links": [
+                {
+                  "SrcId": 3,
+                  "SrcName": "true",
+                  "DstId": 1,
+                  "DstName": "_signal"
+                },
+                {
+                  "SrcId": 0,
+                  "SrcName": "_target",
+                  "DstId": 1,
+                  "DstName": "_this"
+                },
+                {
+                  "Id": 6,
+                  "Value": "sounds/kenney/ui/ui.navigate.back.sound",
+                  "DstId": 1,
+                  "DstName": "soundEvent"
+                },
+                {
+                  "SrcId": 4,
+                  "SrcName": "_result",
+                  "DstId": 2,
+                  "DstName": "_target"
+                },
+                {
+                  "SrcId": 0,
+                  "SrcName": "_signal",
+                  "DstId": 3,
+                  "DstName": "_signal"
+                },
+                {
+                  "SrcId": 2,
+                  "SrcName": "_result",
+                  "DstId": 3,
+                  "DstName": "condition"
+                },
+                {
+                  "SrcId": 0,
+                  "SrcName": "_target",
+                  "DstId": 4,
+                  "DstName": "_target"
+                }
+              ]
+            },
+            "OnComponentEnabled": {
+              "__version": 9,
+              "__guid": "77d47dbb-f4ce-44f1-94d3-54578333f7ec",
+              "__changeId": 0,
+              "UserData": {
+                "Title": "On Component Enabled",
+                "ReferencedComponentTypes": []
+              },
+              "Variables": [],
+              "Nodes": [
+                {
+                  "Id": 0,
+                  "Type": "input"
+                },
+                {
+                  "Id": 1,
+                  "Type": "sound.play",
+                  "UserData": {
+                    "Position": "464,64"
+                  }
+                },
+                {
+                  "Id": 2,
+                  "Type": "property",
+                  "Properties": {
+                    "_name": "IsOwner",
+                    "_type": {
+                      "$type": "Nested",
+                      "DeclaringType": "Sandbox.GameObject",
+                      "Name": "NetworkAccessor"
+                    }
+                  },
+                  "UserData": {
+                    "Position": "-16,80"
+                  }
+                },
+                {
+                  "Id": 3,
+                  "Type": "if",
+                  "UserData": {
+                    "Position": "256,-0"
+                  }
+                },
+                {
+                  "Id": 4,
+                  "Type": "property",
+                  "Properties": {
+                    "_name": "Network",
+                    "_type": "Sandbox.GameObject"
+                  },
+                  "UserData": {
+                    "Position": "-208,80"
+                  }
+                }
+              ],
+              "Links": [
+                {
+                  "SrcId": 3,
+                  "SrcName": "true",
+                  "DstId": 1,
+                  "DstName": "_signal"
+                },
+                {
+                  "SrcId": 0,
+                  "SrcName": "_target",
+                  "DstId": 1,
+                  "DstName": "_this"
+                },
+                {
+                  "Id": 6,
+                  "Value": "sounds/kenney/ui/ui.navigate.forward.sound",
+                  "DstId": 1,
+                  "DstName": "soundEvent"
+                },
+                {
+                  "SrcId": 4,
+                  "SrcName": "_result",
+                  "DstId": 2,
+                  "DstName": "_target"
+                },
+                {
+                  "SrcId": 0,
+                  "SrcName": "_signal",
+                  "DstId": 3,
+                  "DstName": "_signal"
+                },
+                {
+                  "SrcId": 2,
+                  "SrcName": "_result",
+                  "DstId": 3,
+                  "DstName": "condition"
+                },
+                {
+                  "SrcId": 0,
+                  "SrcName": "_target",
+                  "DstId": 4,
+                  "DstName": "_target"
+                }
+              ]
+            },
+            "OnComponentFixedUpdate": null,
+            "OnComponentStart": null,
+            "OnComponentUpdate": null,
+            "Player": {
+              "_type": "component",
+              "component_id": "10039fed-00a3-4ce6-8416-281a841a2ee3",
+              "go": "2f0c5e5d-2852-453b-8cda-f6bb92e65678",
+              "component_type": "Player"
+            },
+            "PrinterPrefab": {
+              "_type": "gameobject",
+              "prefab": "prefab/printer.prefab"
+            },
+            "Props": [
+              "models/citizen_props/chair01.vmdl",
+              "models/citizen_props/trashcan01.vmdl",
+              "models/citizen_props/crate01.vmdl",
+              "models/citizen_props/chair04blackleather.vmdl",
+              "models/citizen_props/concreteroaddivider01.vmdl",
+              "models/citizen_props/wheel01.vmdl",
+              "models/citizen_props/trashbag02.vmdl",
+              "models/citizen_props/cardboardbox01.vmdl",
+              "models/citizen_props/chair02.vmdl",
+              "models/citizen_props/chair03.vmdl",
+              "models/citizen_props/bathroomsink01.vmdl",
+              "models/citizen_props/newspaper01.vmdl",
+              "models/citizen_props/roadcone01.vmdl",
+              "models/citizen_props/recyclingbin01.vmdl",
+              "models/citizen_props/beachball.vmdl",
+              "models/citizen_props/broom01.vmdl",
+              "models/citizen_props/balloonregular01.vmdl"
+            ]
+          },
+          {
+            "__type": "Sandbox.UI.LeaderBoard",
+            "__guid": "a85a180c-7fbf-44df-a018-2d27256c984c",
+            "__enabled": false,
+            "Flags": 0,
+            "OnComponentDestroy": null,
+            "OnComponentDisabled": null,
+            "OnComponentEnabled": null,
+            "OnComponentFixedUpdate": null,
+            "OnComponentStart": null,
+            "OnComponentUpdate": null
+          }
+        ],
+        "Children": []
+      },
+      {
+        "__guid": "ec1ef818-48a4-45c5-87f6-ad454af3e172",
+        "__version": 2,
+        "Flags": 0,
+        "Name": "Nameplates",
+        "Position": "0.6025014,0,83.15387",
+        "Rotation": "0,0,0,1",
+        "Scale": "1,1,1",
+        "Tags": "",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkFlags": 0,
+        "NetworkOrphaned": 0,
+        "NetworkTransmit": true,
+        "OwnerTransfer": 1,
+        "Components": [
+          {
+            "__type": "Sandbox.WorldPanel",
+            "__guid": "4b24e970-ffaa-4830-b2ff-4ee8047345d3",
+            "__enabled": true,
+            "Flags": 0,
+            "HorizontalAlign": "Center",
+            "InteractionRange": 1000,
+            "LookAtCamera": true,
+            "OnComponentDestroy": null,
+            "OnComponentDisabled": null,
+            "OnComponentEnabled": null,
+            "OnComponentFixedUpdate": null,
+            "OnComponentStart": null,
+            "OnComponentUpdate": null,
+            "PanelSize": "800,250",
+            "RenderOptions": {
+              "GameLayer": true,
+              "OverlayLayer": false,
+              "BloomLayer": false,
+              "AfterUILayer": false
+            },
+            "RenderScale": 1.3,
+            "VerticalAlign": "Center"
+          },
+          {
+            "__type": "Sandbox.UI.Nameplates",
+            "__guid": "1d680a3c-87ed-4a89-b2a6-cd08f38931ed",
+            "__enabled": true,
+            "Flags": 0,
+            "OnComponentDestroy": null,
+            "OnComponentDisabled": null,
+            "OnComponentEnabled": null,
+            "OnComponentFixedUpdate": null,
+            "OnComponentStart": {
+              "__version": 9,
+              "__guid": "214aed12-7b14-446d-8052-42752a9b6e74",
+              "__changeId": 0,
+              "UserData": {
+                "Title": "On Component Start",
+                "ReferencedComponentTypes": []
+              },
+              "Variables": [],
+              "Nodes": [
+                {
+                  "Id": 0,
+                  "Type": "input"
+                },
+                {
+                  "Id": 3,
+                  "Type": "property",
+                  "Properties": {
+                    "_name": "Parent",
+                    "_type": "Sandbox.GameObject"
+                  },
+                  "UserData": {
+                    "Position": "-288,96"
+                  }
+                },
+                {
+                  "Id": 6,
+                  "Type": "property",
+                  "Properties": {
+                    "_name": "Network",
+                    "_type": "Sandbox.GameObject"
+                  },
+                  "UserData": {
+                    "Position": "-128,96"
+                  }
+                },
+                {
+                  "Id": 7,
+                  "Type": "property",
+                  "Properties": {
+                    "_name": "OwnerConnection",
+                    "_type": {
+                      "$type": "Nested",
+                      "DeclaringType": "Sandbox.GameObject",
+                      "Name": "NetworkAccessor"
+                    }
+                  },
+                  "UserData": {
+                    "Position": "80,96"
+                  }
+                },
+                {
+                  "Id": 9,
+                  "Type": "property",
+                  "Properties": {
+                    "_name": "DisplayName",
+                    "_type": "Sandbox.Connection"
+                  },
+                  "UserData": {
+                    "Position": "416,96"
+                  }
+                },
+                {
+                  "Id": 10,
+                  "Type": "log.info",
+                  "UserData": {
+                    "Position": "672,0"
+                  }
+                }
+              ],
+              "Links": [
+                {
+                  "SrcId": 0,
+                  "SrcName": "_target",
+                  "DstId": 3,
+                  "DstName": "_target"
+                },
+                {
+                  "SrcId": 3,
+                  "SrcName": "_result",
+                  "DstId": 6,
+                  "DstName": "_target"
+                },
+                {
+                  "SrcId": 6,
+                  "SrcName": "_result",
+                  "DstId": 7,
+                  "DstName": "_target"
+                },
+                {
+                  "SrcId": 7,
+                  "SrcName": "_result",
+                  "DstId": 9,
+                  "DstName": "_target"
+                },
+                {
+                  "SrcId": 0,
+                  "SrcName": "_signal",
+                  "DstId": 10,
+                  "DstName": "_signal"
+                },
+                {
+                  "SrcId": 9,
+                  "SrcName": "_result",
+                  "DstId": 10,
+                  "DstName": "args",
+                  "DstIndex": 0
+                }
+              ]
+            },
+            "OnComponentUpdate": null
+          }
+        ],
+        "Children": []
+      },
+      {
+        "__guid": "4cd83b94-b253-4955-8123-0a7e28793b4a",
+        "__version": 2,
+        "Flags": 0,
+        "Name": "Flashlight",
+        "Position": "6.202,0,63.841",
+        "Rotation": "0,0,0,1",
+        "Scale": "1,1,1",
+        "Tags": "light_spot,light",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkFlags": 0,
+        "NetworkOrphaned": 0,
+        "NetworkTransmit": true,
+        "OwnerTransfer": 1,
+        "Components": [
+          {
+            "__type": "Sandbox.SpotLight",
+            "__guid": "316f73a0-a3e8-4aeb-a298-3cccc24f7fcf",
+            "__enabled": false,
+            "Flags": 0,
+            "Attenuation": 7.37,
+            "ConeInner": 64.88,
+            "ConeOuter": 22.95,
+            "Cookie": null,
+            "FogMode": "Enabled",
+            "FogStrength": 1,
+            "LightColor": "0.91373,0.98039,1,1",
+            "OnComponentDestroy": null,
+            "OnComponentDisabled": null,
+            "OnComponentEnabled": null,
+            "OnComponentFixedUpdate": null,
+            "OnComponentStart": null,
+            "OnComponentUpdate": null,
+            "Radius": 700,
+            "Shadows": false
+          },
+          {
+            "__type": "Sandbox.SoundPointComponent",
+            "__guid": "4f91538b-962b-48ab-b29f-e8ce958d31e8",
+            "__enabled": true,
+            "Flags": 0,
+            "Distance": 512,
+            "DistanceAttenuation": false,
+            "DistanceAttenuationOverride": false,
+            "Falloff": [
+              {
+                "x": 0,
+                "y": 1,
+                "in": 3.1415927,
+                "out": -3.1415927,
+                "mode": "Mirrored"
+              },
+              {
+                "x": 1,
+                "y": 0,
+                "in": 0,
+                "out": 0,
+                "mode": "Mirrored"
+              }
+            ],
+            "Force2d": false,
+            "MaxRepeatTime": 1,
+            "MinRepeatTime": 1,
+            "Occlusion": false,
+            "OcclusionOverride": false,
+            "OcclusionRadius": 32,
+            "OnComponentDestroy": null,
+            "OnComponentDisabled": null,
+            "OnComponentEnabled": null,
+            "OnComponentFixedUpdate": null,
+            "OnComponentStart": null,
+            "OnComponentUpdate": null,
+            "Pitch": 1,
+            "PlayOnStart": false,
+            "ReflectionOverride": false,
+            "Reflections": false,
+            "Repeat": false,
+            "SoundEvent": "audio/flashlighton.sound",
+            "SoundOverride": false,
+            "StopOnNew": true,
+            "TargetMixer": {
+              "Name": "game",
+              "Id": "b12b3054-0f4b-495a-b43a-e6469a03328a"
+            },
+            "Volume": 1
+          },
+          {
+            "__type": "Sandbox.Player.Systems.Flashlight",
+            "__guid": "31b6764f-fbff-41cf-b0cb-4daf35a701c5",
+            "__enabled": true,
+            "Flags": 0,
+            "_light": {
+              "_type": "component",
+              "component_id": "316f73a0-a3e8-4aeb-a298-3cccc24f7fcf",
+              "go": "4cd83b94-b253-4955-8123-0a7e28793b4a",
+              "component_type": "SpotLight"
+            },
+            "_player": {
+              "_type": "component",
+              "component_id": "10039fed-00a3-4ce6-8416-281a841a2ee3",
+              "go": "2f0c5e5d-2852-453b-8cda-f6bb92e65678",
+              "component_type": "Player"
+            },
+            "_soundPoint": {
+              "_type": "component",
+              "component_id": "4f91538b-962b-48ab-b29f-e8ce958d31e8",
+              "go": "4cd83b94-b253-4955-8123-0a7e28793b4a",
+              "component_type": "SoundPointComponent"
+            },
+            "OnComponentDestroy": null,
+            "OnComponentDisabled": null,
+            "OnComponentEnabled": null,
+            "OnComponentFixedUpdate": null,
+            "OnComponentStart": null,
+            "OnComponentUpdate": null
+          }
+        ],
+        "Children": []
+      },
+      {
+        "__guid": "2a3b6954-19c0-42f0-b37c-ae8385a004a3",
+        "__version": 2,
+        "Flags": 0,
+        "Name": "Map",
+        "Position": "0,0,0",
+        "Rotation": "0,0,0,1",
+        "Scale": "1,1,1",
+        "Tags": "",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkFlags": 0,
+        "NetworkOrphaned": 0,
+        "NetworkTransmit": true,
+        "OwnerTransfer": 1,
+        "Components": [
+          {
+            "__type": "Sandbox.MapInstance",
+            "__guid": "2d40ed5d-f9fe-4b2b-9cb9-3cfffe0f1ebd",
+            "__enabled": true,
+            "Flags": 0,
+            "__version": 1,
+            "EnableCollision": true,
+            "MapName": "voximity.flat_plane",
+            "NoOrigin": false,
+            "OnComponentDestroy": null,
+            "OnComponentDisabled": null,
+            "OnComponentEnabled": null,
+            "OnComponentFixedUpdate": null,
+            "OnComponentStart": null,
+            "OnComponentUpdate": null,
+            "OnMapLoaded": null,
+            "OnMapUnloaded": null,
+            "UseMapFromLaunch": false
+          }
+        ],
+        "Children": []
+      }
+    ],
+    "__properties": {
+      "NetworkInterpolation": true,
+      "TimeScale": 1,
+      "WantsSystemScene": true,
+      "Metadata": {},
+      "NavMesh": {
+        "Enabled": false,
+        "IncludeStaticBodies": true,
+        "IncludeKeyframedBodies": true,
+        "EditorAutoUpdate": false,
+        "AgentHeight": 64,
+        "AgentRadius": 16,
+        "AgentStepSize": 18,
+        "AgentMaxSlope": 40,
+        "ExcludedBodies": "",
+        "IncludedBodies": "",
+        "CustomBounds": false
+      }
+    },
+    "__variables": []
+  },
+  "ResourceVersion": 2,
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "DontBreakAsTemplate": false,
+  "__references": [],
+  "__version": 2
+}

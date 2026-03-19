@@ -1,0 +1,21 @@
+{
+  "publish": {
+    "Enabled": true,
+    "ProjectConfig": {
+      "Title": "Temp Door 001A 56 112",
+      "Type": "fbx",
+      "Org": "local",
+      "Ident": "tempdoor001a56112",
+      "Schema": 0,
+      "IncludeSourceFiles": false,
+      "Resources": null,
+      "PackageReferences": null,
+      "EditorReferences": null,
+      "Mounts": null,
+      "IsStandaloneOnly": false,
+      "Metadata": {
+        "SingleAssetSource": "models/props_doors/temp_door_001a_56_112.fbx"
+      }
+    }
+  }
+}
