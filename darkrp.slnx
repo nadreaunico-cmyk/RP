@@ -1,0 +1,23 @@
+<Solution>
+  <Configurations>
+    <Platform Name="Any CPU" />
+  </Configurations>
+  <Project Path="code/darkrp.csproj" />
+  <Folder Name="/Addons/">
+    <Project Path="../../../../../Program Files (x86)/Steam/steamapps/common/sbox/addons/base/code/Base Library.csproj" />
+  </Folder>
+  <Folder Name="/Libraries/">
+    <Project Path="Libraries/facepunch.playercontroller/Code/playercontroller.csproj" />
+    <Project Path="Libraries/facepunch.playercontroller/Editor/playercontroller.editor.csproj" />
+    <Project Path="Libraries/facepunch.playercontroller/UnitTests/playercontroller.unittest.csproj" />
+    <Project Path="Libraries/tux.linuxfix/Code/linuxfix.csproj" />
+    <Project Path="Libraries/tux.linuxfix/Editor/linuxfix.editor.csproj" />
+  </Folder>
+  <Folder Name="/Tools/">
+    <Project Path="../../../../../Program Files (x86)/Steam/steamapps/common/sbox/addons/tools/Code/Base Editor Library.csproj" />
+    <Project Path="../../../../../Program Files (x86)/Steam/steamapps/common/sbox/editor/ActionGraph/Code/actiongraph.csproj" />
+    <Project Path="../../../../../Program Files (x86)/Steam/steamapps/common/sbox/editor/Hammer/Code/hammer.csproj" />
+    <Project Path="../../../../../Program Files (x86)/Steam/steamapps/common/sbox/editor/MovieMaker/Code/moviemaker.csproj" />
+    <Project Path="../../../../../Program Files (x86)/Steam/steamapps/common/sbox/editor/ShaderGraph/Code/shadergraph.csproj" />
+  </Folder>
+</Solution>

@@ -1,0 +1,37 @@
+C:\Users\nadre\OneDrive\Desktop\DarkRP-main\code\obj\Debug\EmbeddedAttribute.cs
+C:\Users\nadre\OneDrive\Desktop\DarkRP-main\code\obj\Debug\ValidatableTypeAttribute.cs
+C:\Users\nadre\OneDrive\Desktop\DarkRP-main\code\obj\Debug\darkrp.csproj.AssemblyReference.cache
+C:\Users\nadre\OneDrive\Desktop\DarkRP-main\code\obj\Debug\rpswa.dswa.cache.json
+C:\Users\nadre\OneDrive\Desktop\DarkRP-main\code\obj\Debug\darkrp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nadre\OneDrive\Desktop\DarkRP-main\code\obj\Debug\darkrp.AssemblyInfoInputs.cache
+C:\Users\nadre\OneDrive\Desktop\DarkRP-main\code\obj\Debug\darkrp.AssemblyInfo.cs
+C:\Users\nadre\OneDrive\Desktop\DarkRP-main\code\obj\Debug\darkrp.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\sbox\.vs\output\Base Library.staticwebassets.endpoints.json
+C:\Program Files (x86)\Steam\steamapps\common\sbox\.vs\output\playercontroller.staticwebassets.endpoints.json
+C:\Program Files (x86)\Steam\steamapps\common\sbox\.vs\output\linuxfix.staticwebassets.endpoints.json
+C:\Program Files (x86)\Steam\steamapps\common\sbox\.vs\output\Properties\launchSettings.json
+C:\Program Files (x86)\Steam\steamapps\common\sbox\.vs\output\darkrp.staticwebassets.endpoints.json
+C:\Program Files (x86)\Steam\steamapps\common\sbox\.vs\output\darkrp.xml
+C:\Program Files (x86)\Steam\steamapps\common\sbox\.vs\output\darkrp.deps.json
+C:\Program Files (x86)\Steam\steamapps\common\sbox\.vs\output\darkrp.dll
+C:\Program Files (x86)\Steam\steamapps\common\sbox\.vs\output\darkrp.pdb
+C:\Users\nadre\OneDrive\Desktop\DarkRP-main\code\obj\Debug\rjimswa.dswa.cache.json
+C:\Users\nadre\OneDrive\Desktop\DarkRP-main\code\obj\Debug\rjsmrazor.dswa.cache.json
+C:\Users\nadre\OneDrive\Desktop\DarkRP-main\code\obj\Debug\rjsmcshtml.dswa.cache.json
+C:\Users\nadre\OneDrive\Desktop\DarkRP-main\code\obj\Debug\scopedcss\bundle\darkrp.styles.css
+C:\Users\nadre\OneDrive\Desktop\DarkRP-main\code\obj\Debug\staticwebassets.build.json
+C:\Users\nadre\OneDrive\Desktop\DarkRP-main\code\obj\Debug\staticwebassets.build.json.cache
+C:\Users\nadre\OneDrive\Desktop\DarkRP-main\code\obj\Debug\staticwebassets.development.json
+C:\Users\nadre\OneDrive\Desktop\DarkRP-main\code\obj\Debug\staticwebassets.build.endpoints.json
+C:\Users\nadre\OneDrive\Desktop\DarkRP-main\code\obj\Debug\swae.build.ex.cache
+C:\Users\nadre\OneDrive\Desktop\DarkRP-main\code\obj\Debug\staticwebassets\msbuild.darkrp.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\nadre\OneDrive\Desktop\DarkRP-main\code\obj\Debug\staticwebassets\msbuild.darkrp.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\nadre\OneDrive\Desktop\DarkRP-main\code\obj\Debug\staticwebassets\msbuild.build.darkrp.props
+C:\Users\nadre\OneDrive\Desktop\DarkRP-main\code\obj\Debug\staticwebassets\msbuild.buildMultiTargeting.darkrp.props
+C:\Users\nadre\OneDrive\Desktop\DarkRP-main\code\obj\Debug\staticwebassets\msbuild.buildTransitive.darkrp.props
+C:\Users\nadre\OneDrive\Desktop\DarkRP-main\code\obj\Debug\staticwebassets.pack.json
+C:\Users\nadre\OneDrive\Desktop\DarkRP-main\code\obj\Debug\darkrp.csproj.Up2Date
+C:\Users\nadre\OneDrive\Desktop\DarkRP-main\code\obj\Debug\darkrp.dll
+C:\Users\nadre\OneDrive\Desktop\DarkRP-main\code\obj\Debug\refint\darkrp.dll
+C:\Users\nadre\OneDrive\Desktop\DarkRP-main\code\obj\Debug\darkrp.pdb
+C:\Users\nadre\OneDrive\Desktop\DarkRP-main\code\obj\Debug\ref\darkrp.dll
